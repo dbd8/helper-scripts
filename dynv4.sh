@@ -1,6 +1,9 @@
 #!/bin/sh -e
+
+#IP update script for aws ec2 instance with public ipv4
 #put this in crontab
-#token=<your-token> ./dynv4.sh <your-zone-name> >> ~/dynv4.log 2>&1
+#@reboot token=<your-token> ./dynv4.sh <your-dynv6-zone> >> ~/dynv4.log 2>&1
+#*/5 * * * * token=<your-token> ./dynv4.sh <your-dynv6-zone> >> ~/dynv4.log 2>&1
 
 hostname=$1
 
